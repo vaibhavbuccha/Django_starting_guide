@@ -1,18 +1,30 @@
 ## Django
 ---
 - Create A New Django Project
-
-> django-admin startproject <projectname>
-
-
+```bash
+ django-admin startproject <ProjectName>
+```
 - Run Django Project
-
-> python3 manage.py runserver
-
+```bash
+ python3 manage.py runserver
+```
 - Create new App
-
-> python3 manage.py startapp starter
-
+```bash
+ python3 manage.py startapp <AppName>
+```
 - Migrate / Create Database
-
-> python3 manage.py migrate
+```bash
+  python3 manage.py migrate
+```
+- Make migration tells to the that we have made some changes in models.
+```bash
+ python3 manage.py makemigrations <AppName>
+```
+- For create tables we have to run sqlmigarte command.
+```bash
+	python3 manage.py sqlmigarte <AppName> <MigrationId> 
+```  
+- For run interative python shell
+```bash
+	python3 manage.py shell
+```
